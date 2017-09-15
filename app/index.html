@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+
+<html lang="en">
+	<head>
+		<meta charset="utf-8" />
+		<title>Simple example - Editor.md examples</title>
+		<link rel="stylesheet" href="css/style.css" />
+		<link rel="stylesheet" href="css/editormd.css" />
+	</head>
+	<body>
+		<div id="layout">
+			<header>
+				<h1>Simple example</h1>
+			</header>
+			<div id="test-editormd">
+				<textarea style="display:none;"></textarea>
+			</div>
+		</div>
+		<script src="js/jquery.min.js"></script>
+		<script src="editormd.js"></script>
+    <script src="js/en.js"></script>
+    <script type="text/javascript">
+      var testEditor;
+      $(function() {
+        testEditor = editormd("test-editormd", {
+          width   : "90%",
+          height  : 640,
+          syncScrolling : "single",
+          path    : "../lib/",
+          taskList: true,
+          tabSize: 2,
+          indentUnit: 2,
+          tex: true
+        });
+      });
+		</script>
+	</body>
+</html>
