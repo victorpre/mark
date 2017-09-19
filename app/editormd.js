@@ -689,9 +689,10 @@
             {
                 editormd.loadCSS(settings.path + "codemirror/theme/" + settings.editorTheme);
             }
-            
+
             var codeMirrorConfig = {
-                mode                      : settings.mode,
+                mode                      : { name: settings.mode,
+                                              highlightFormatting: true },
                 theme                     : settings.editorTheme,
                 tabSize                   : settings.tabSize,
                 dragDrop                  : false,
