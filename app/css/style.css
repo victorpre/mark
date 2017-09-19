@@ -94,11 +94,24 @@ body {
 }
 
 span.cm-header {
-  color: #c4c4c4 !important;
 }
 
 .cm-header-1 {
+  color: #000 !important;
   font-size: 20px;
 }
 
+.is-h1 span .cm-formatting-header-1:not(:only-child) {
+  display: none;
+}
 
+.cm-formatting-header-1:after {
+}
+
+.cm-cm-overlay.cm-trailingspace:before {
+}
+ .is-h1 span .cm-header-1:not(.cm-matchhighlight):not(.cm-trailingspace):not(:only-child):before {
+   color: #c4c4c4 !important;
+   font-size: 10px;
+   content: "H1 "
+ }
