@@ -13,26 +13,12 @@
 				<h1>Simple example</h1>
 			</header>
 			<div id="test-editormd">
-				<textarea style="display:none;"></textarea>
+				<textarea style="display:none;" id="code"></textarea>
 			</div>
 		</div>
 		<script src="js/jquery.min.js"></script>
 		<script src="editormd.js"></script>
     <script src="js/en.js"></script>
-    <script type="text/javascript">
-      var testEditor;
-      $(function() {
-        testEditor = editormd("test-editormd", {
-          width   : "90%",
-          height  : 640,
-          syncScrolling : "single",
-          path    : "../lib/",
-          taskList: true,
-          tabSize: 2,
-          indentUnit: 2,
-          tex: true
-        });
-      });
-		</script>
+    <script src="js/custom.js"></script>
 	</body>
 </html>

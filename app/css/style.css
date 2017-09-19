@@ -92,3 +92,13 @@ body {
 .btns button:hover, .btn:hover {
     background: #f6f6f6;
 }
+
+span.cm-header {
+  color: #c4c4c4 !important;
+}
+
+.cm-header-1 {
+  font-size: 20px;
+}
+
+
