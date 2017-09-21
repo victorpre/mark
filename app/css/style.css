@@ -93,29 +93,70 @@ body {
     background: #f6f6f6;
 }
 
-span.cm-header {
+
+
+.cm-formatting{
+  display: none;
+}
+
+.cm-header {
+  color: #000 !important;
+}
+
+.cm-header:only-child {
+  display: inline;
 }
 
 .cm-header-1 {
-  color: #000 !important;
-  font-size: 20px;
+  font-size: 2.25em;
 }
 
-/*.is-h1 span .cm-formatting-header-1:not(:only-child) {
-  display: none;
-}*/
+.cm-formatting-header + .cm-header:before {
+  display: inline;
+  color: #c4c4c4 !important;
+  font-size: 10px;
+}
 
-  .cm-formatting{
-    display: none;
-  }
+.cm-formatting-header-1 + .cm-header-1:before {
+  content: "H1 "
+}
 
-  .cm-header:only-child {
-    display: inline;
-  }
+.cm-header-2 {
+  font-size: 1.75em;
+}
 
-  .cm-formatting-header + .cm-header:before {
-    display: inline;
-    color: #c4c4c4 !important;
-    font-size: 10px;
-    content: "H1 "
-  }
+.cm-formatting-header-2 + .cm-header-2:before {
+  content: "H2 "
+}
+
+.cm-header-3 {
+  font-size: 1.5em;
+}
+
+.cm-formatting-header-3 + .cm-header-3:before {
+  content: "H3 "
+}
+
+.cm-header-4 {
+  font-size: 1.25em;
+}
+
+.cm-formatting-header-4 + .cm-header-4:before {
+  content: "H4 "
+}
+
+.cm-header-5 {
+  font-size: 1em;
+}
+
+.cm-formatting-header-5 + .cm-header-5:before {
+  content: "H5 "
+}
+
+.cm-header-6 {
+  font-size: 1em;
+}
+
+.cm-formatting-header-6 + .cm-header-6:before {
+  content: "H6 "
+}
